@@ -1,4 +1,4 @@
-%define		snap	20160220
+%define		snap	20160811
 #
 Summary:	Compositor for X11
 Name:		compton
@@ -7,7 +7,7 @@ Release:	0.%{snap}.1
 License:	MIT
 Group:		X11/Applications
 Source0:	%{name}-%{snap}.tar.xz
-# Source0-md5:	ead07333478d2563065468d078caf64f
+# Source0-md5:	66f3cfc0f6c3963a6c6c41e741b1518a
 URL:		https://github.com/chjj/compton
 BuildRequires:	OpenGL-devel
 BuildRequires:	asciidoc
