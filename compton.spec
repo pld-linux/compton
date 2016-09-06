@@ -7,7 +7,7 @@ Release:	0.%{snap}.1
 License:	MIT
 Group:		X11/Applications
 Source0:	%{name}-%{snap}.tar.xz
-# Source0-md5:	66f3cfc0f6c3963a6c6c41e741b1518a
+# Source0-md5:	92ed60a5d5f94211852e0d9b005b75ec
 URL:		https://github.com/chjj/compton
 BuildRequires:	OpenGL-devel
 BuildRequires:	asciidoc
