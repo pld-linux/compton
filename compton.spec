@@ -1,11 +1,14 @@
 %define		snap	20160811
 #
 Summary:	Compositor for X11
+Summary(pl.UTF-8):	Zarządca kompozycji dla X11
 Name:		compton
 Version:	0.0.1
-Release:	0.%{snap}.1
+%define	rel	2
+Release:	0.%{snap}.%{rel}
 License:	MIT
 Group:		X11/Applications
+#Source0Download: https://github.com/chjj/compton/releases
 Source0:	%{name}-%{snap}.tar.xz
 # Source0-md5:	92ed60a5d5f94211852e0d9b005b75ec
 URL:		https://github.com/chjj/compton
@@ -30,6 +33,9 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 %description
 Compositor for X11.
 
+%description -l pl.UTF-8
+Zarządca kompozycji dla X11.
+
 %prep
 %setup -q -n %{name}
 
@@ -39,6 +45,7 @@ CFLAGS="%{rpmcflags}" \
 LDFLAGS="%{rpmldflags}" \
 COMPTON_VERSION="%{snap}" \
 %{__make}
+
 %{__make} docs
 
 %install
