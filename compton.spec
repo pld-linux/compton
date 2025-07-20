@@ -4,7 +4,7 @@ Summary:	Compositor for X11
 Summary(pl.UTF-8):	Zarządca kompozycji dla X11
 Name:		compton
 Version:	0.0.1
-%define	rel	2
+%define	rel	3
 Release:	0.%{snap}.%{rel}
 License:	MIT
 Group:		X11/Applications
